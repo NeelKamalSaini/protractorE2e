@@ -8,4 +8,8 @@ export class PatientDetailPage {
   async getTitleText() {
     return await element(by.css('drp-patient-detail .title')).getText();
   }
+
+  async scheduleAppointment() {
+    return await element(by.linkText('Schedule Appointment')).click();
+  }
 }
